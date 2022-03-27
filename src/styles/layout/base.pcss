@@ -1,0 +1,138 @@
+html {
+	font-size: 14px;
+
+  @include xl {
+    font-size: 16px;
+  }
+}
+body,
+html {
+  height: 100%;
+}
+
+body {
+  font-family: Prompt;
+  font-size: 16px;
+  color: $color-text;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.wrapper {
+  overflow: hidden;
+  min-height: 100%;
+  position: relative;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 16px;
+
+  @include sm {
+    max-width: $sm;
+  }
+  @include md {
+    max-width: $md;
+  }
+  @include lg {
+    max-width: $lg;
+  }
+  @include xl {
+    max-width: $xl;
+  }
+  @include hd {
+    max-width: $hd;
+  }
+}
+
+button {
+  border: 0;
+  cursor: pointer;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+  margin: 0;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+button[type='button'] {
+  cursor: pointer;
+  background-color: transparent;
+}
+
+a {
+  color: inherit;
+  cursor: pointer;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+html {
+  ::selection {
+    background-color: $blue;
+  }
+  ::-webkit-scrollbar {
+    /* 1 - скроллбар */
+    width: 5px;
+    height: 5px;
+    background-color: rgba($blue, 1);
+  }
+
+  ::-webkit-scrollbar-button {
+    /* 2 - кнопка */
+  }
+
+  ::-webkit-scrollbar-track {
+    /* 3 - трек */
+  }
+
+  ::-webkit-scrollbar-track-piece {
+    /* 4 - видимая часть трека */
+  }
+
+  ::-webkit-scrollbar-thumb {
+    /* 5 - ползунок */
+    border-radius: 2px;
+    background-color: $red;
+  }
+
+  ::-webkit-scrollbar-corner {
+    /* 6 - уголок */
+  }
+
+  ::-webkit-resizer {
+    /* 7 - изменение размеров */
+  }
+}
+
+.clearfix {
+  &::after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+}

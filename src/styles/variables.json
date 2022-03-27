@@ -1,0 +1,17 @@
+{
+  "red": "red",
+  "blue": "blue",
+  "yellow": "yellow",
+  "color-text": "#ce58d7",
+
+  "desktop-hd": "1800px",
+  "desktop": "1200px",
+  "tablets": "768px",
+  "phones": "320px",
+
+  "sm": "640px",
+  "md": "768px",
+  "lg": "1024px",
+  "xl": "1280px",
+  "hd": "1536px"
+}
