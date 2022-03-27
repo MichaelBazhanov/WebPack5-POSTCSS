@@ -1,5 +1,5 @@
 {
-  "name": "webpack5-sass",
+  "name": "webpack5-postcss",
   "version": "1.0.0",
   "description": "start template",
   "main": "index.js",
